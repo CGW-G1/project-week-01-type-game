@@ -1,0 +1,59 @@
+<html>
+    <head>
+
+        <title>Little Test</title>     
+
+        <link href="./src/css/index.css" rel="stylesheet" type="text/css">
+
+        <script defer src = "./src/scripts/index.js"></script>
+
+    </head>
+
+    <body>
+        <div class = "main-box"> <!-- main div -->
+
+            <div class = "box304030" style = "height:300px"> <!-- div for scene -->
+
+                <div class = "landL"> 
+
+                    <div class = "pairArea">
+                       
+                    </div>
+
+                </div> <!-- close div for land A -->
+
+                <div class = "water"> 
+
+                    <div class = boat id = "boat">
+
+                    </div> <!-- close div for boat -->
+
+                </div> <!-- close div for water -->
+
+                <div class = "landR"> 
+                    
+                    <div class = "pairArea">
+                       
+                    </div>
+
+                </div> <!-- close div for land B -->
+
+
+            </div> <!-- close div for scene -->
+
+            <div class = "box304030"> <!-- interface area -->
+                <div>
+                    <p>The Boat is <span id = boatStatus></span></p>
+                </div>
+                <div>
+                    <button class = boat id = boatButton onclick="boatMove()">Move boat</button>
+                </div>
+                <div>
+                    <p> There are civilians (yellow) and cannibals (red) on the left shore. Send all civilians across the water but when you move the boat and the cannibals outnumber the civilians on land, game over.</p>
+                </div>
+            </div> <!-- close div for interface -->
+
+
+        </div> <!-- close for main div -->
+    </body>
+</html>

@@ -1,0 +1,94 @@
+body{
+    background-color:lightgrey;
+}
+
+/* main window */
+.main-box{
+    height: 400px;
+    width: 60%;    
+    position:relative;    
+    justify-content:center;
+    padding-bottom:20px;
+}
+
+/* division of main window, land-water-land */ 
+.box304030{    
+    display:grid;
+    /* height: 300px; */
+    height: auto;
+    grid-template-columns:30% 40% 30%;
+    justify-content:center;        
+    margin-bottom:20px;    
+}
+
+/* boat */
+#boat{
+    background-color: orange;
+    height: 15%;        
+    bottom: -40%;    
+    transition: transform 1s;
+    transition-timing-function: ease-in-out;
+    border-radius: 20%;
+}
+
+.boat{
+    width: 20%;
+    position: relative;    
+    display: flex;
+    align-items: center;
+    justify-content:center;    
+}
+
+.boatMoveLR{
+    transform: translateX(400%);
+}
+
+.boatMoveRL{
+    transform: translateX(0%);
+}
+
+#boatButton{
+    background-color:orange;    
+    transition-delay: 1s;
+    margin: auto 40% auto 40%;
+}
+
+/* using button as sprites */
+.pairButton{
+    padding: 15px;
+    text-align: center;    
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.cann{
+    background-color: red; /* cannibal */    
+}
+
+.civi{
+    background-color: yellow; /* civilian */
+}
+
+.pairArea{
+    height: 50%;    
+    margin: auto 20%;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;    
+}
+
+/*  layout colors */
+.landL{
+    position: relative;
+    height: 100%;
+    background-color: rgba(64, 99, 9, 0.849);
+}
+
+.landR{
+    position: relative;
+    height: 100%;
+    background-color: rgba(64, 99, 9, 0.849);
+}
+
+.water{
+    background-color: lightskyblue;
+}
